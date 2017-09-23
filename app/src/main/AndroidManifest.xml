@@ -32,6 +32,10 @@
         <activity
             android:name=".ViewCampaign"
             android:label="@string/title_activity_view_campaign"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".VolunteerForCampaign"
+            android:label="@string/title_activity_volunteer_for_campaign"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
