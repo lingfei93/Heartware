@@ -5,9 +5,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.net.Uri;
 
 public class BeneficiaryProfilePage extends AppCompatActivity {
     Button createCamButton;
+    Button learnMoreButton;
     BeneficiaryProfilePage currentScreen;
 
     @Override
@@ -22,6 +24,17 @@ public class BeneficiaryProfilePage extends AppCompatActivity {
             public void onClick(View view) {
                 Intent myIntent = new Intent(currentScreen, StartCampaign.class);
                 startActivity(myIntent);
+            }
+        });
+
+        learnMoreButton = (Button)findViewById(R.id.learnButton);
+        learnMoreButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("http://www.aspn.org"));
+                startActivity(intent);
             }
         });
     }

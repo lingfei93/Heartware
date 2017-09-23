@@ -6,6 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.renlingfei.heartware.BeneficiaryProfilePage">
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        app:menu="@menu/bottom_nav_items"
+        app:itemBackground="@color/black_overlay"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+    >
 
     <ImageView
         android:id="@+id/imageView"
@@ -38,7 +50,7 @@
         android:layout_below="@id/benName"/>
 
     <Button
-        android:id="@+id/donateButton"
+        android:id="@+id/learnButton"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -50,7 +62,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:layout_below="@id/donateButton"
+        android:layout_below="@id/learnButton"
         android:text="@string/currCam"
         android:textAlignment="center"/>
 

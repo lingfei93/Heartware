@@ -1,33 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.renlingfei.heartware.SearchPage">
-
-    <android.support.design.widget.AppBarLayout
+    tools:context="com.example.renlingfei.heartware.BeneficiaryProfilePage">
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_gravity="start"
+        app:menu="@menu/bottom_nav_items"
+        app:itemBackground="@color/black_overlay"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-    </android.support.design.widget.AppBarLayout>
-
-    <include layout="@layout/content_search_page" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+    <SearchView
+        android:id="@+id/searchBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search Here" />
 
-</android.support.design.widget.CoordinatorLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchBar">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+            <TableRow
+                android:layout_marginBottom="5dp">
+                <Button
+                    android:id="@+id/searchResult11"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Recycling 4 Good" />
+                <Button
+                    android:id="@+id/searchResult12"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Red Cross Recycling" />
+                <Button
+                    android:id="@+id/searchResult13"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="ASPN Zero Waste" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/searchResult21"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="UpCycle Today" />
+                <Button
+                    android:id="@+id/searchResult22"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Recycle Mania" />
+                <Button
+                    android:id="@+id/searchResult23"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Collect 4 Charity" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/searchResult31"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="UpCycle" />
+                <Button
+                    android:id="@+id/searchResult32"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Recycle" />
+                <Button
+                    android:id="@+id/searchResult33"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="giving.sg" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/searchResult41"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Waste Free SG" />
+                <Button
+                    android:id="@+id/searchResult42"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="RED CROSS Upcycling" />
+                <Button
+                    android:id="@+id/searchResult43"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Save the Earth" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/searchResult51"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="sgcares" />
+                <Button
+                    android:id="@+id/searchResult52"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="3Rs" />
+                <Button
+                    android:id="@+id/searchResult53"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Recycling" />
+            </TableRow>
+        </TableLayout>
+
+    </ScrollView>
+
+
+    </RelativeLayout>
