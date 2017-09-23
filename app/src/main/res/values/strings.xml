@@ -7,4 +7,5 @@
     <string name="currCam">Existing Campaigns</string>
     <string name="oldCam">Past Campaigns</string>
     <string name="createCam">Create New</string>
+    <string name="title_activity_start_campaign">StartCampaign</string>
 </resources>
