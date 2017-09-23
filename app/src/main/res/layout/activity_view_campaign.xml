@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.renlingfei.heartware.BeneficiaryProfilePage">
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/backButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/backarrow"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"/>
+
+    <EditText
+        android:id="@+id/campaignName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:text="ASPN Zero Waste" />
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="?android:attr/buttonBarStyle"
+        android:layout_below="@id/campaignName"
+        android:id="@+id/campaignDesTable"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/camIC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Campaign IC:"/>
+
+            <EditText
+                android:id="@+id/camICFill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="Jillian Heng" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/camDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description:"/>
+
+            <EditText
+                android:id="@+id/camDesFill"
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:minLines="2"
+                android:gravity="start"
+                android:maxLines="5"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                android:text="25/09/17 (Monday) - 26/09/17 (Tuesday);
+                9AM - 5PM"
+                android:ems="10" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/collectionTable"
+        android:layout_below="@id/campaignDesTable"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/camItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Items to Collect:"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp">
+            <CheckBox
+                android:id="@+id/chkNewspaper"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Newspaper" />
+
+            <CheckBox
+                android:id="@+id/chkElectronics"
+                android:layout_height="wrap_content"
+                android:layout_width="110dp"
+                android:checked="true"
+                android:text="Electronics" />
+
+            <CheckBox
+                android:id="@+id/chkShoes"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Shoes" />
+
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/chkClothing"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Cardboard" />
+
+            <CheckBox
+                android:id="@+id/chkBooks"
+                android:layout_height="wrap_content"
+                android:layout_width="110dp"
+                android:checked="true"
+                android:text="Books" />
+
+            <CheckBox
+                android:id="@+id/chkAccessories"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Plastic" />
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/chkOthers"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Add More:" />
+
+            <EditText
+                android:id="@+id/otherDonation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:inputType="text" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/camDetTable"
+        android:layout_below="@id/collectionTable"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TableRow>
+            <TextView
+                android:id="@+id/camLoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Collection Location(s):"/>
+
+            <EditText
+                android:id="@+id/camLocFill"
+                android:inputType="textMultiLine"
+                android:lines="1"
+                android:minLines="1"
+                android:gravity="start"
+                android:maxLines="5"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                android:text="Jurong, Clementi, Joo Koon"
+                android:ems="7" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/camTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Collection Timing(s):"/>
+
+            <EditText
+                android:id="@+id/camTimeFill"
+                android:inputType="textMultiLine"
+                android:lines="1"
+                android:minLines="1"
+                android:gravity="start"
+                android:maxLines="7"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                android:text="25/09/17 3PM-5PM
+25/09/17 6PM-9PM
+26/09/17 3PM-5PM"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:ems="7" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/camCol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Collector(s):"/>
+
+            <EditText
+                android:id="@+id/camColFill"
+                android:inputType="textMultiLine"
+                android:lines="1"
+                android:minLines="1"
+                android:gravity="start"
+                android:maxLines="5"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                android:ems="7" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/updateCamButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="Update Campaign" />
+
+</RelativeLayout>
