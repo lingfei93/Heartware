@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">Heartware</string>
+
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
     <string name="title_activity_beneficiary_profile_page">BeneficiaryProfilePage</string>
     <string name="benName">Association for Persons with Special Needs</string>
     <string name="benDes">Empowered Lives for An Engaged Community and Inclusive Society.</string>
@@ -7,5 +13,8 @@
     <string name="currCam">Existing Campaigns</string>
     <string name="oldCam">Past Campaigns</string>
     <string name="createCam">Create New</string>
+    <string name="createCamPage">Create New Campaign</string>
+    <string name="campaignName">Insert Campaign Name</string>
     <string name="title_activity_start_campaign">StartCampaign</string>
+
 </resources>
