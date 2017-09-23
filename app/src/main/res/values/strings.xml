@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Heartware</string>
+    <string name="title_activity_beneficiary_profile_page">BeneficiaryProfilePage</string>
+    <string name="benName">Association for Persons with Special Needs</string>
+    <string name="benDes">Empowered Lives for An Engaged Community and Inclusive Society.</string>
+    <string name="benLink">LEARN MORE ABOUT ASPN</string>
+    <string name="currCam">Existing Campaigns</string>
+    <string name="oldCam">Past Campaigns</string>
+    <string name="createCam">Create New</string>
 </resources>
