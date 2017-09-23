@@ -45,7 +45,7 @@ public class CollectorCampaignPage extends Activity {
 
             //create image
             ImageButton profile_picture = new ImageButton(this);
-            profile_picture.setImageDrawable(getResources().getDrawable(R.drawable.profilepic));
+                profile_picture.setImageDrawable(getResources().getDrawable(R.drawable.profilepic));
             profile_picture.setBackgroundColor(0);
 
             //create second column
