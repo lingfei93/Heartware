@@ -16,5 +16,7 @@
     <string name="createCamPage">Create New Campaign</string>
     <string name="campaignName">Insert Campaign Name</string>
     <string name="title_activity_start_campaign">StartCampaign</string>
+    <string name="title_activity_search_page">SearchPage</string>
+    <string name="title_activity_view_campaign">ViewCampaign</string>
 
 </resources>
