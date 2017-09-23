@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.renlingfei.heartware.BeneficiaryProfilePage">
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/backButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/backarrow"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"/>
+
+    <TextView
+        android:id="@+id/campaignName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Donate to APSN"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <TableLayout
+        android:id="@+id/collectionTable"
+        android:layout_below="@id/campaignName"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/camItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Items to donate:"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp">
+            <CheckBox
+                android:id="@+id/chkNewspaper"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Newspaper" />
+
+            <CheckBox
+                android:id="@+id/chkElectronics"
+                android:layout_height="wrap_content"
+                android:layout_width="110dp"
+                android:text="Electronics" />
+
+            <CheckBox
+                android:id="@+id/chkShoes"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Shoes" />
+
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/chkClothing"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Clothing" />
+
+            <CheckBox
+                android:id="@+id/chkBooks"
+                android:layout_height="wrap_content"
+                android:layout_width="110dp"
+                android:text="Books" />
+
+            <CheckBox
+                android:id="@+id/chkAccessories"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Accessories" />
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/chkOthers"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Other Item:" />
+
+            <EditText
+                android:id="@+id/otherDonation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:inputType="text" />
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/chkValuable"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Valuables:" />
+
+            <EditText
+                android:id="@+id/valuables"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:inputType="text" />
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/chkCash"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Cash:" />
+
+            <EditText
+                android:id="@+id/cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:inputType="text" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_below="@id/collectionTable"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/camDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estimated number of people needed for pick-up:"/>
+
+    <TableLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/donationPeople"
+        android:layout_below="@id/camDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <CheckBox
+                android:id="@+id/chkOption1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1" />
+            <CheckBox
+                android:id="@+id/chkOption2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2" />
+            <CheckBox
+                android:id="@+id/chkOption3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"/>
+            <CheckBox
+                android:id="@+id/chkOption4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Others: "/>
+            <EditText
+                android:id="@+id/chkOptionFill"
+                android:ems="5"/>
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_below="@id/donationPeople"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/camTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Available Timing(s) for pick-up:"/>
+
+    <TableLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/donationTime"
+        android:layout_below="@id/camTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <CheckBox
+                android:id="@+id/chkOptionT1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25/09/17 Monday, 3PM-5PM" />
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/chkOptionT2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25/09/17 Monday, 6PM-9PM" />
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/chkOptionT3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="26/09/17 Tuesday, 3PM-5PM" />
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/chkOptionT4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="None, but I would still like to donate!" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/donateCamButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="Submit" />
+
+</RelativeLayout>
