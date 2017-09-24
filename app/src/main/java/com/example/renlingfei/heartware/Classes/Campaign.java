@@ -1,12 +1,14 @@
 package com.example.renlingfei.heartware.Classes;
 
+import android.os.Parcel;
+import android.os.Parcelable;
 import android.widget.DatePicker;
 
 /**
  * Created by renlingfei on 23/9/17.
  */
 
-public class Campaign {
+public class Campaign{
     String campaignName;
     String description;
     Person campaignIC;
