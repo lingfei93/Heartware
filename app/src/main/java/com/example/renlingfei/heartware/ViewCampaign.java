@@ -20,7 +20,7 @@ public class ViewCampaign extends AppCompatActivity {
         setContentView(R.layout.activity_view_campaign);
 
         currentScreen = this;
-        updateCamButton = (Button) findViewById(R.id.createCamButton);
+        updateCamButton = (Button) findViewById(R.id.updateCamButton);
         updateCamButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

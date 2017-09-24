@@ -10,7 +10,9 @@
         android:theme="@style/AppTheme">
 
         <activity android:name=".MainActivity"></activity>
-        <activity android:name=".BeneficiaryCampaignPage"/>
+        <activity android:name=".BeneficiaryCampaignPage">
+
+        </activity>
         <activity android:name=".CollectorCampaignPage" />
         <activity android:name=".DonorCampaignPage"/>
         <activity android:name=".CollectForCampaign"/>
