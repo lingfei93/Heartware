@@ -36,10 +36,10 @@
         android:textSize= "7pt"/>
 
     <Button
-        android:id="@+id/button_beneficiary_profile_contact"
+        android:id="@+id/button_beneficiary_profile_edit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Contact"
+        android:text="Edit"
         android:layout_alignTop="@+id/text_beneficiary_profile_campaign_details"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
@@ -91,7 +91,7 @@
     <HorizontalScrollView
         android:id="@+id/horizontal_scroll_beneficiary_profile_donors"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="150dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/text_beneficiary_profile_donors"
@@ -142,7 +142,7 @@
     <HorizontalScrollView
         android:id="@+id/horizontal_scroll_beneficiary_profile_collectors"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="150dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/text_beneficiary_profile_collectors"

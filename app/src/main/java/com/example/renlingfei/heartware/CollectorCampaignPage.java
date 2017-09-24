@@ -1,6 +1,7 @@
 package com.example.renlingfei.heartware;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.media.Image;
 import android.os.Build;
@@ -18,14 +19,26 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 public class CollectorCampaignPage extends Activity {
+    CollectorCampaignPage currentScreen;
 
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         int allocation_size = 4;
+        Button contact;
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_collector_campaign_page);
+
+        currentScreen = this;
+        contact = (Button) findViewById(R.id.button_collector_profile_contact);
+        contact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(currentScreen, DonorCampaignPage.class);
+                startActivity(myIntent);
+            }
+        });
 
         //for each row
         for (int i = 0; i < allocation_size; i++) {

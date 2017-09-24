@@ -24,10 +24,8 @@ public class StartCampaign extends AppCompatActivity {
         createCamButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Button set_button = (Button) findViewById(R.id.currCamPic2);
-                set_button.setVisibility(View.VISIBLE);
 
-                Intent myIntent = new Intent(currentScreen, BeneficiaryCampaignPage.class);
+                Intent myIntent = new Intent(currentScreen, BeneficiaryProfilePage.class);
                 startActivity(myIntent);
             }
         });

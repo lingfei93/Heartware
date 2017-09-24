@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.renlingfei.heartware.DonorCampaignPage">
+
+    <TextView
+        android:id="@+id/text_donor_profile_campaign_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Campaign Name"
+        android:gravity="center"
+        android:layout_marginTop="41dp"
+        android:textStyle="bold"
+        android:textSize= "9pt"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/text_donor_profile_campaign_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/text_donor_profile_campaign_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="41dp"
+        android:text="Campaign Details:"
+        android:textStyle="bold"
+        android:textSize= "7pt"/>
+
+    <TextView
+        android:id="@+id/text_donor_profile_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_donor_profile_campaign_details"
+        android:layout_alignStart="@+id/text_donor_profile_campaign_details"
+        android:layout_below="@+id/text_donor_profile_campaign_details"
+        android:layout_marginTop="16dp"
+        android:text="Location" />
+
+    <TextView
+        android:id="@+id/text_donor_profile_timeslot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_donor_profile_location"
+        android:layout_alignStart="@+id/text_donor_profile_location"
+        android:layout_below="@+id/text_donor_profile_location"
+        android:layout_marginTop="13dp"
+        android:text="Timeslot" />
+
+    <TextView
+        android:id="@+id/text_donor_profile_campaign_IC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_donor_profile_timeslot"
+        android:layout_alignStart="@+id/text_donor_profile_timeslot"
+        android:layout_below="@+id/text_donor_profile_timeslot"
+        android:layout_marginTop="19dp"
+        android:text="Campaign IC" />
+
+
+    <Button
+        android:id="@+id/button_donor_profile_contact_IC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact"
+        android:layout_below="@+id/text_donor_profile_timeslot"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
+
+    <TextView
+        android:id="@+id/text_donor_profile_your_collector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_donor_profile_campaign_IC"
+        android:layout_alignStart="@+id/text_donor_profile_campaign_IC"
+        android:layout_below="@+id/text_donor_profile_campaign_IC"
+        android:text="Your Collector:"
+        android:layout_marginTop="41dp"
+        android:textStyle="bold"
+        android:textSize= "7pt"/>
+
+    <ImageView
+        android:id="@+id/image_donor_profile_profile_pic"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/text_donor_profile_your_collector"
+        android:layout_alignStart="@+id/text_donor_profile_your_collector"
+        android:layout_below="@+id/text_donor_profile_your_collector"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/profilepic" />
+
+    <TextView
+        android:id="@+id/text_donor_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Collector Name"
+        android:layout_alignTop="@+id/image_donor_profile_profile_pic"
+        android:layout_toRightOf="@+id/text_donor_profile_location"
+        android:layout_toEndOf="@+id/text_donor_profile_location"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/button_donor_profile_contact_collector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button_donor_profile_contact_IC"
+        android:layout_alignRight="@+id/button_donor_profile_contact_IC"
+        android:layout_below="@+id/text_donor_profile_your_collector"
+        android:text="Contact" />
+
+    <TextView
+        android:id="@+id/text_donor_profile_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/image_donor_profile_profile_pic"
+        android:layout_alignStart="@+id/image_donor_profile_profile_pic"
+        android:layout_below="@+id/image_donor_profile_profile_pic"
+        android:text="Your Progress:"
+        android:layout_marginTop="41dp"
+        android:textStyle="bold"
+        android:textSize= "7pt"/>
+
+    <TableLayout
+        android:id="@+id/table_donor_profile_progress_table"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignEnd="@+id/button_donor_profile_contact_collector"
+        android:layout_alignLeft="@+id/text_donor_profile_progress"
+        android:layout_alignRight="@+id/button_donor_profile_contact_collector"
+        android:layout_alignStart="@+id/text_donor_profile_progress"
+        android:layout_below="@+id/text_donor_profile_progress"
+        android:layout_marginTop="10dp" />
+
+
+
+
+</RelativeLayout>
