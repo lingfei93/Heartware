@@ -26,6 +26,12 @@ public class MainActivity extends AppCompatActivity {
     MainActivity currentScreen;
     TextView myTextView;
     Button btn;
+    Button donorCam;
+    Button collectorCam;
+    Button regionEvent1;
+    Button regionEvent2;
+    Button regionEvent3;
+    Button regionEvent4;
 
     @Override
 
@@ -33,6 +39,57 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
+
+        donorCam = (Button) findViewById(R.id.oldCamPic1);
+        donorCam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(currentScreen, DonorCampaignPage.class);
+                startActivity(myIntent);
+            }
+        });
+
+        collectorCam = (Button) findViewById(R.id.oldCamPic2);
+        collectorCam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(currentScreen, CollectorCampaignPage.class);
+                startActivity(myIntent);
+            }
+        });
+
+        regionEvent1 = (Button) findViewById(R.id.regionEvent1);
+        regionEvent2 = (Button) findViewById(R.id.regionEvent2);
+        regionEvent3 = (Button) findViewById(R.id.regionEvent3);
+        regionEvent4 = (Button) findViewById(R.id.regionEvent4);
+        regionEvent1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(currentScreen, VolunteerForCampaign.class);
+                startActivity(myIntent);
+            }
+        });
+        regionEvent2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(currentScreen, VolunteerForCampaign.class);
+                startActivity(myIntent);
+            }
+        });
+        regionEvent3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(currentScreen, VolunteerForCampaign.class);
+                startActivity(myIntent);
+            }
+        });
+        regionEvent4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(currentScreen, VolunteerForCampaign.class);
+                startActivity(myIntent);
+            }
+        });
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
