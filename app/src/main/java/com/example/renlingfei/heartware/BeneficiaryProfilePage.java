@@ -16,6 +16,7 @@ import com.example.renlingfei.heartware.Classes.Database;
 
 public class BeneficiaryProfilePage extends AppCompatActivity {
     Button createCamButton;
+    Button currCam;
     Button learnMoreButton;
     BeneficiaryProfilePage currentScreen;
 
@@ -30,6 +31,15 @@ public class BeneficiaryProfilePage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent myIntent = new Intent(currentScreen, StartCampaign.class);
+                startActivity(myIntent);
+            }
+        });
+
+        currCam = (Button) findViewById(R.id.currCamPicBenProf1);
+        currCam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(currentScreen, BeneficiaryCampaignPage.class);
                 startActivity(myIntent);
             }
         });
@@ -51,8 +61,7 @@ public class BeneficiaryProfilePage extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.action_profile:
-                        Toast.makeText(getApplicationContext(), "Your toast message.",
-                                Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(BeneficiaryProfilePage.this, BeneficiaryProfilePage.class));
                         break;
                     case R.id.action_homepage:
                         Intent intent = new Intent(getBaseContext(), MainActivity.class);

@@ -29,7 +29,7 @@ public class ViewCampaign extends AppCompatActivity {
             }
         });
 
-        backButton = (Button) findViewById(R.id.backButton);
+        backButton = (Button) findViewById(R.id.backButton5);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

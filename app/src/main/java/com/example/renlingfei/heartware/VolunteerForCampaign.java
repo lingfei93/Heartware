@@ -11,7 +11,7 @@ import android.widget.Button;
 
 public class VolunteerForCampaign extends AppCompatActivity {
     Button backButton;
-    Button donateToButton;
+    Button donateTo;
     Button collectForButton;
     VolunteerForCampaign currentScreen;
 
@@ -20,7 +20,7 @@ public class VolunteerForCampaign extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_volunteer_for_campaign);
         currentScreen = this;
-        backButton = (Button) findViewById(R.id.backButton);
+        backButton = (Button) findViewById(R.id.backButton2);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -29,8 +29,8 @@ public class VolunteerForCampaign extends AppCompatActivity {
             }
         });
 
-        donateToButton = (Button) findViewById(R.id.donateToButton);
-        donateToButton.setOnClickListener(new View.OnClickListener() {
+        donateTo = (Button) findViewById(R.id.donateToButton);
+        donateTo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent myIntent = new Intent(currentScreen, DonateToCampaign.class);

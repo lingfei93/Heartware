@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="start"
         app:menu="@menu/bottom_nav_items"
-        app:itemBackground="@color/black_overlay"
+        app:itemBackground="@color/gray"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -24,7 +24,7 @@
         android:layout_width="150dp"
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="-20dp"
+        android:layout_marginTop="-50dp"
         android:contentDescription="@string/benName"
         android:src="@drawable/benlogo" />
 
@@ -36,7 +36,7 @@
         android:id="@+id/benName"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="120dp" />
+        android:layout_marginTop="90dp" />
 
     <TextView
         android:layout_width="300dp"
@@ -61,7 +61,6 @@
         android:id="@+id/currCam"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
         android:layout_below="@id/learnButton"
         android:text="@string/currCam"
         android:textSize="16dp"
@@ -73,9 +72,12 @@
         android:id="@+id/currCamScroll"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:layout_below="@id/currCam"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="100dp">
+        android:layout_height="100dp"
+        android:layout_below="@+id/currCam"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
             style="?android:attr/buttonBarStyle"
@@ -94,7 +96,7 @@
 
                 <Button
                     style="?android:attr/borderlessButtonStyle"
-                    android:id="@+id/currCamPic1"
+                    android:id="@+id/currCamPicBenProf1"
                     android:layout_width="100dp"
                     android:layout_height="90dp"
                     android:layout_marginRight="10dp"
@@ -108,7 +110,7 @@
 
                 <Button
                     style="?android:attr/borderlessButtonStyle"
-                    android:id="@+id/currCamPic2"
+                    android:id="@+id/currCamPicBenProf2"
                     android:layout_width="100dp"
                     android:layout_height="90dp"
                     android:layout_marginRight="10dp"
@@ -153,7 +155,7 @@
 
                 <Button
                     style="?android:attr/borderlessButtonStyle"
-                    android:id="@+id/oldCamPic1"
+                    android:id="@+id/oldCamPicBenProf1"
                     android:layout_width="100dp"
                     android:layout_height="90dp"
                     android:layout_marginLeft="10dp"
@@ -166,7 +168,7 @@
 
                 <Button
                     style="?android:attr/borderlessButtonStyle"
-                    android:id="@+id/oldCamPic2"
+                    android:id="@+id/oldCamPic2BenProf"
                     android:layout_width="100dp"
                     android:layout_height="90dp"
                     android:layout_marginRight="10dp"
@@ -178,7 +180,7 @@
                     android:text="COLLECT"/>
                 <Button
                     style="?android:attr/borderlessButtonStyle"
-                    android:id="@+id/oldCamPic3"
+                    android:id="@+id/oldCamPic3BenProf"
                     android:layout_width="100dp"
                     android:layout_height="90dp"
                     android:layout_marginRight="10dp"
@@ -190,7 +192,7 @@
                     android:text="REcycle"/>
                 <Button
                     style="?android:attr/borderlessButtonStyle"
-                    android:id="@+id/oldCamPic4"
+                    android:id="@+id/oldCamPic4BenProf"
                     android:layout_width="100dp"
                     android:layout_height="90dp"
                     android:layout_marginRight="10dp"
