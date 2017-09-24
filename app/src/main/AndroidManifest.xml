@@ -10,7 +10,13 @@
         android:theme="@style/AppTheme">
 
         <activity android:name=".MainActivity"></activity>
-        <activity android:name=".BeneficiaryCampaignPage" />
+        <activity android:name=".BeneficiaryCampaignPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".CollectorCampaignPage" />
         <activity android:name=".DonorCampaignPage">
 
@@ -20,11 +26,7 @@
             android:name=".BeneficiaryProfilePage"
             android:label="@string/title_activity_beneficiary_profile_page"
             android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <activity
