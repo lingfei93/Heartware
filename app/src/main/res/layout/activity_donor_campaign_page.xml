@@ -10,7 +10,7 @@
         android:id="@+id/text_donor_profile_campaign_name"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Campaign Name"
+        android:text="Zero-Waste 2017"
         android:gravity="center"
         android:layout_marginTop="41dp"
         android:textStyle="bold"
@@ -40,7 +40,7 @@
         android:layout_alignStart="@+id/text_donor_profile_campaign_details"
         android:layout_below="@+id/text_donor_profile_campaign_details"
         android:layout_marginTop="16dp"
-        android:text="Location" />
+        android:text="Location: Jurong, Clementi, Joo Koon" />
 
     <TextView
         android:id="@+id/text_donor_profile_timeslot"
@@ -50,7 +50,7 @@
         android:layout_alignStart="@+id/text_donor_profile_location"
         android:layout_below="@+id/text_donor_profile_location"
         android:layout_marginTop="13dp"
-        android:text="Timeslot" />
+        android:text="Timeslot: 25/09 3PM-5PM" />
 
     <TextView
         android:id="@+id/text_donor_profile_campaign_IC"
@@ -60,7 +60,7 @@
         android:layout_alignStart="@+id/text_donor_profile_timeslot"
         android:layout_below="@+id/text_donor_profile_timeslot"
         android:layout_marginTop="19dp"
-        android:text="Campaign IC" />
+        android:text="Campaign IC: Fauzi" />
 
 
     <Button
@@ -100,11 +100,11 @@
         android:id="@+id/text_donor_profile_name"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:text="Collector Name"
-        android:layout_alignTop="@+id/image_donor_profile_profile_pic"
-        android:layout_toRightOf="@+id/text_donor_profile_location"
-        android:layout_toEndOf="@+id/text_donor_profile_location"
-        android:textAlignment="center"/>
+        android:text="Trudy Sih"
+        android:textAlignment="center"
+        android:layout_above="@+id/text_donor_profile_progress"
+        android:layout_alignRight="@+id/text_donor_profile_your_collector"
+        android:layout_alignEnd="@+id/text_donor_profile_your_collector" />
 
     <Button
         android:id="@+id/button_donor_profile_contact_collector"
@@ -141,14 +141,15 @@
         android:id="@+id/text_donor_profile_progress_text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/text_donor_profile_campaign_IC"
-        android:layout_alignRight="@+id/text_donor_profile_campaign_IC"
         android:layout_marginTop="7dp"
         android:text="Waiting for collector"
+        android:textStyle="bold"
         android:layout_alignLeft="@+id/image_donor_profile_profile_pic"
         android:layout_alignStart="@+id/image_donor_profile_profile_pic"
         android:layout_below="@+id/image_donor_profile_progress"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:layout_alignRight="@+id/text_donor_profile_name"
+        android:layout_alignEnd="@+id/text_donor_profile_name" />
 
     <TextView
         android:id="@+id/text_donor_profile_progress_text2"

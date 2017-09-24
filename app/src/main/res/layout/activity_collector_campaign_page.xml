@@ -18,7 +18,7 @@
         android:id="@+id/text_collector_profile_campaign_name"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Campaign Name"
+        android:text="APSN Upcycling 2017"
         android:layout_below="@+id/appBarLayout2"
         android:gravity="center"
         android:layout_centerInParent="true"
@@ -50,7 +50,7 @@
         android:layout_alignStart="@+id/text_collector_profile_campaign_details"
         android:layout_below="@+id/text_collector_profile_campaign_details"
         android:layout_marginTop="16dp"
-        android:text="Location" />
+        android:text="Location: Tampines" />
 
     <TextView
         android:id="@+id/text_collector_profile_timeslot"
@@ -60,7 +60,7 @@
         android:layout_alignStart="@+id/text_collector_profile_location"
         android:layout_below="@+id/text_collector_profile_location"
         android:layout_marginTop="13dp"
-        android:text="Timeslot" />
+        android:text="Timeslot: Sunday, 21 August, 8am-1pm" />
 
     <TextView
         android:id="@+id/text_collector_profile_campaign_IC"
@@ -70,7 +70,7 @@
         android:layout_alignStart="@+id/text_collector_profile_timeslot"
         android:layout_below="@+id/text_collector_profile_timeslot"
         android:layout_marginTop="19dp"
-        android:text="Campaign IC" />
+        android:text="Campaign IC: Wesley Yeo" />
 
 
     <Button
