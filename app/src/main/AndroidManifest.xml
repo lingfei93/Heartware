@@ -12,6 +12,7 @@
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".BeneficiaryCampaignPage" />
         <activity android:name=".CollectorCampaignPage" />
+        <activity android:name=".VolunteerForCampaign" />
         <activity android:name=".DonorCampaignPage">
         </activity>
 

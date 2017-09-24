@@ -1,6 +1,7 @@
 package com.example.renlingfei.heartware;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
@@ -22,10 +23,13 @@ public class BeneficiaryCampaignPage extends Activity {
     int num_donors;
     int num_collectors;
 
+    BeneficiaryCampaignPage currentScreen;
+    Button editCam;
 
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         donor_label= new TextView(this);
         collector_label = new TextView(this);
         num_donors = 20;
@@ -40,6 +44,15 @@ public class BeneficiaryCampaignPage extends Activity {
         collector_label.setText(num_collectors + " collectors");
         populateCollectorTable();
         populateDonorTable();
+        currentScreen = this;
+        editCam = (Button) findViewById(R.id.button_beneficiary_profile_edit);
+        editCam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(currentScreen, ViewCampaign.class);
+                startActivity(myIntent);
+            }
+        });
     }
 
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)

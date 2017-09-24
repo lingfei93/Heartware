@@ -19,7 +19,7 @@ public class CollectForCampaign extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_collect_for_campaign);
 
-        backButton = (Button) findViewById(R.id.backButton);
+        backButton = (Button) findViewById(R.id.backButton3);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -19,7 +19,7 @@ public class DonateToCampaign extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_donate_to_campaign);
 
-        backButton = (Button) findViewById(R.id.backButton);
+        backButton = (Button) findViewById(R.id.backButton4);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
