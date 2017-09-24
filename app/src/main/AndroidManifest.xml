@@ -20,7 +20,7 @@
         <activity
             android:name=".BeneficiaryProfilePage"
             android:label="@string/title_activity_beneficiary_profile_page"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".StartCampaign"
             android:label="@string/title_activity_start_campaign"
@@ -44,6 +44,10 @@
         <activity
             android:name=".CollectForCampaign"
             android:label="@string/title_activity_collect_for_campaign"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProfilePage"
+            android:label="@string/title_activity_profile_page"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
