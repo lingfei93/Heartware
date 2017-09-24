@@ -98,7 +98,10 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/currcampic1"
-                    android:scaleType="centerCrop"/>
+                    android:scaleType="centerCrop"
+                    android:backgroundTint="#80FFFFFF"
+                    android:backgroundTintMode="src_over"
+                    android:text="UpReCycle"/>
 
                 <Button
                     style="?android:attr/borderlessButtonStyle"
@@ -109,7 +112,10 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/currcampic2"
-                    android:scaleType="centerCrop"/>
+                    android:scaleType="centerCrop"
+                    android:backgroundTint="#80FFFFFF"
+                    android:backgroundTintMode="src_over"
+                    android:text="Zero Waste"/>
 
             </TableRow>
         </TableLayout>
@@ -148,7 +154,9 @@
                     android:layout_marginRight="10dp"
                     android:background="@drawable/oldcampic1"
                     android:scaleType="centerCrop"
-                    android:text="" />
+                    android:backgroundTint="#80FFFFFF"
+                    android:backgroundTintMode="src_over"
+                    android:text="UpReCycle"/>
 
                 <Button
                     style="?android:attr/borderlessButtonStyle"
@@ -159,7 +167,9 @@
                     android:layout_marginEnd="10dp"
                     android:background="@drawable/oldcampic2"
                     android:scaleType="centerCrop"
-                    android:text="" />
+                    android:backgroundTint="#80FFFFFF"
+                    android:backgroundTintMode="src_over"
+                    android:text="COLLECT"/>
                 <Button
                     style="?android:attr/borderlessButtonStyle"
                     android:id="@+id/oldCamPic3"
@@ -169,7 +179,9 @@
                     android:layout_marginEnd="10dp"
                     android:background="@drawable/oldcampic3"
                     android:scaleType="centerCrop"
-                    android:text="" />
+                    android:backgroundTint="#80FFFFFF"
+                    android:backgroundTintMode="src_over"
+                    android:text="REcycle"/>
                 <Button
                     style="?android:attr/borderlessButtonStyle"
                     android:id="@+id/oldCamPic4"
@@ -179,7 +191,9 @@
                     android:layout_marginEnd="10dp"
                     android:background="@drawable/oldcampic4"
                     android:scaleType="centerCrop"
-                    android:text="" />
+                    android:backgroundTint="#80FFFFFF"
+                    android:backgroundTintMode="src_over"
+                    android:text="Collection"/>
 
             </TableRow>
         </TableLayout>
