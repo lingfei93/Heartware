@@ -10,17 +10,17 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
         <activity android:name=".BeneficiaryCampaignPage" />
-        <activity android:name=".CollectorCampaignPage">
+        <activity android:name=".CollectorCampaignPage" />
+        <activity
+            android:name=".BeneficiaryProfilePage"
+            android:label="@string/title_activity_beneficiary_profile_page"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".BeneficiaryProfilePage"
-            android:label="@string/title_activity_beneficiary_profile_page"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".StartCampaign"
             android:label="@string/title_activity_start_campaign"
@@ -32,18 +32,6 @@
         <activity
             android:name=".ViewCampaign"
             android:label="@string/title_activity_view_campaign"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".VolunteerForCampaign"
-            android:label="@string/title_activity_volunteer_for_campaign"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".DonateToCampaign"
-            android:label="@string/title_activity_donate_to_campaign"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".CollectForCampaign"
-            android:label="@string/title_activity_collect_for_campaign"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

@@ -33,6 +33,9 @@
             android:name=".ViewCampaign"
             android:label="@string/title_activity_view_campaign"
             android:theme="@style/AppTheme.NoActionBar" />
+<<<<<<< HEAD
+        <activity android:name=".DonorCampaignPage"></activity>
+=======
         <activity
             android:name=".VolunteerForCampaign"
             android:label="@string/title_activity_volunteer_for_campaign"
@@ -45,6 +48,7 @@
             android:name=".CollectForCampaign"
             android:label="@string/title_activity_collect_for_campaign"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+>>>>>>> 0e535dfe3cdced09fe79c4c88aafe478d52eb69b
     </application>
 
 </manifest>

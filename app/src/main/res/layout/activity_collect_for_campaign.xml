@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.renlingfei.heartware.BeneficiaryProfilePage">
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/backButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/backarrow"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"/>
+
+    <TextView
+        android:id="@+id/campaignName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Collect for APSN"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="?android:attr/buttonBarStyle"
+        android:layout_below="@id/campaignName"
+        android:id="@+id/campaignDesTable"
+        android:layout_margin="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <TableRow
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/camDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description:"/>
+
+            <TextView
+                android:id="@+id/camDesFill"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                android:text="25/09/17 (Mon) - 26/09/17 (Tues)\n9AM - 5PM on both days\nMeals will be provided for volunteers\nContact organization for more information"/>
+        </TableRow>
+    </TableLayout>
+
+
+    <TextView
+        android:layout_below="@id/campaignDesTable"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/camTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Available Timing(s) for pick-up:"/>
+
+    <TableLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/donationTime"
+        android:layout_below="@id/camTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <CheckBox
+                android:id="@+id/chkOptionT1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25/09/17 Monday, 3PM-5PM" />
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/chkOptionT2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25/09/17 Monday, 6PM-9PM" />
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/chkOptionT3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="26/09/17 Tuesday, 3PM-5PM" />
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/chkOptionT4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Others, please list timings below" />
+        </TableRow>
+        <TableRow
+            android:layout_marginLeft="20dp">
+            <EditText
+                android:id="@+id/camTimeFill"
+                android:inputType="textMultiLine"
+                android:lines="1"
+                android:minLines="1"
+                android:gravity="start"
+                android:maxLines="7"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                android:hint="Include date and time"
+                android:ems="7" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/donateCamButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="Submit" />
+
+</RelativeLayout>
