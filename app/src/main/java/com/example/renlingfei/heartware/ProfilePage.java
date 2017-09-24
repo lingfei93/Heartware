@@ -9,30 +9,30 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
-public class CollectForCampaign extends AppCompatActivity {
-    Button backButton;
-    Button submitButton;
-    CollectForCampaign currentScreen;
+public class ProfilePage extends AppCompatActivity {
+    Button donateToButton;
+    Button collectForButton;
+    ProfilePage currentScreen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_collect_for_campaign);
+        setContentView(R.layout.activity_profile_page);
 
-        backButton = (Button) findViewById(R.id.backButton);
-        backButton.setOnClickListener(new View.OnClickListener() {
+        donateToButton = (Button) findViewById(R.id.currCamPic1);
+        donateToButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(currentScreen,VolunteerForCampaign.class);
+                Intent myIntent = new Intent(currentScreen, DonorCampaignPage.class);
                 startActivity(myIntent);
             }
         });
 
-        submitButton = (Button) findViewById(R.id.collectForCamButton);
-        backButton.setOnClickListener(new View.OnClickListener() {
+        collectForButton = (Button) findViewById(R.id.oldCamPic1);
+        collectForButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(currentScreen, ProfilePage.class);
+                Intent myIntent = new Intent(currentScreen, CollectorCampaignPage.class);
                 startActivity(myIntent);
             }
         });

@@ -21,13 +21,162 @@
 
 
 
-    <Button
-        android:id="@+id/button3"
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/SignedUpScroll"
+        android:layout_centerHorizontal="true"
+        android:layout_height="15dp"
+        android:layout_marginTop="300dp"
+        android:background="#90909090"
+
+        android:id="@+id/view" />
+
+    <TextView
+        android:id="@+id/SignedUpText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="189dp"
-        android:text="Button"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:text="Signed Up : " />
+
+    <HorizontalScrollView
+        android:id="@+id/SignedUpScroll"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_below="@id/SignedUpText"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp">
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+
+            <TableRow>
+
+                <Button
+                    style="?android:attr/borderlessButtonStyle"
+                    android:id="@+id/oldCamPic1"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/oldcampic1"
+                    android:scaleType="centerCrop"
+                    android:backgroundTint="#80FFFFFF"
+                    android:backgroundTintMode="src_over"
+                    android:text="Zero Waste 2017" />
+
+                <Button
+                    style="?android:attr/borderlessButtonStyle"
+                    android:id="@+id/oldCamPic2"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/oldcampic2"
+                    android:scaleType="centerCrop"
+                    android:backgroundTint="#80FFFFFF"
+                    android:backgroundTintMode="src_over"
+                    android:text="APSN Upcycling 2017" />
+
+            </TableRow>
+        </TableLayout>
+    </HorizontalScrollView >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SignedUpText"
+        android:layout_alignStart="@+id/SignedUpText"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:text="In Your Region: " />
+
+    <HorizontalScrollView
+        android:id="@+id/inYourRegion"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textView2">
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+
+            <TableRow>
+
+                <Button
+                    style="?android:attr/borderlessButtonStyle"
+                    android:id="@+id/regionEvent1"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/oldcampic1"
+                    android:scaleType="centerCrop"
+                    android:backgroundTint="#80FFFFFF"
+                    android:backgroundTintMode="src_over"
+                    android:text="SG cares" />
+
+                <Button
+                    style="?android:attr/borderlessButtonStyle"
+                    android:id="@+id/regionEvent2"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/oldcampic2"
+                    android:scaleType="centerCrop"
+                    android:backgroundTint="#80FFFFFF"
+                    android:backgroundTintMode="src_over"
+                    android:text="Woodlands Run" />
+                <Button
+                    style="?android:attr/borderlessButtonStyle"
+                    android:id="@+id/regionEvent3"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/oldcampic3"
+                    android:scaleType="centerCrop"
+                    android:backgroundTint="#80FFFFFF"
+                    android:backgroundTintMode="src_over"
+                    android:text="BlastOff" />
+                <Button
+                    style="?android:attr/borderlessButtonStyle"
+                    android:id="@+id/regionEvent4"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/oldcampic4"
+                    android:scaleType="centerCrop"
+                    android:backgroundTint="#80FFFFFF"
+                    android:backgroundTintMode="src_over"
+                    android:text="UpReCycle" />
+
+            </TableRow>
+        </TableLayout>
+    </HorizontalScrollView >
+
 
 
 </RelativeLayout>

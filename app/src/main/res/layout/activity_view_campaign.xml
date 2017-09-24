@@ -178,7 +178,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:scrollbars="vertical"
-                android:text="Jurong, Clementi, Joo Koon"
+                android:text="Bedok Reservoir"
                 android:ems="7" />
         </TableRow>
 
