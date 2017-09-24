@@ -2,10 +2,17 @@ package com.example.renlingfei.heartware;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.net.Uri;
+import android.widget.Toast;
+
+import com.example.renlingfei.heartware.Classes.Campaign;
+import com.example.renlingfei.heartware.Classes.Database;
 
 public class BeneficiaryProfilePage extends AppCompatActivity {
     Button createCamButton;
@@ -35,6 +42,29 @@ public class BeneficiaryProfilePage extends AppCompatActivity {
                 intent.addCategory(Intent.CATEGORY_BROWSABLE);
                 intent.setData(Uri.parse("http://www.aspn.org"));
                 startActivity(intent);
+            }
+        });
+
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.action_profile:
+                        Toast.makeText(getApplicationContext(), "Your toast message.",
+                                Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.action_homepage:
+                        Intent intent = new Intent(getBaseContext(), MainActivity.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.action_campaign:
+                        startActivity(new Intent(BeneficiaryProfilePage.this,SearchPage.class));
+                        break;
+
+                }
+                return true;
+
             }
         });
     }

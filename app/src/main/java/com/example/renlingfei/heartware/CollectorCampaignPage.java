@@ -26,19 +26,9 @@ public class CollectorCampaignPage extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         int allocation_size = 4;
         Button contact;
-        Button backButton;
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_collector_campaign_page);
 
-        backButton = (Button) findViewById(R.id.backButton);
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent myIntent = new Intent(currentScreen,ProfilePage.class);
-                startActivity(myIntent);
-            }
-        });
 
         currentScreen = this;
         contact = (Button) findViewById(R.id.button_collector_profile_contact);

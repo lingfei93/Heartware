@@ -33,14 +33,16 @@ public class MainActivity extends AppCompatActivity {
     Button regionEvent3;
     Button regionEvent4;
 
+    Button test;
+
     @Override
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
+        currentScreen = this;
 
-        donorCam = (Button) findViewById(R.id.oldCamPic1);
+        donorCam = (Button) findViewById(R.id.signedup1);
         donorCam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -49,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        collectorCam = (Button) findViewById(R.id.oldCamPic2);
+        collectorCam = (Button) findViewById(R.id.signedup2);
         collectorCam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -102,11 +104,6 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.action_homepage:
                         Intent intent = new Intent(getBaseContext(), MainActivity.class);
-                        Database db = new Database();
-                        Campaign test = new Campaign();
-                        test.setCampaign_name("helooOo");
-                        db.setCampaign(test);
-                        intent.putExtra("testParcel", db);
                         startActivity(intent);
                         break;
                     case R.id.action_campaign:

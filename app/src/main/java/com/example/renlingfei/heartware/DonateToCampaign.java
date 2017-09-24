@@ -29,7 +29,7 @@ public class DonateToCampaign extends AppCompatActivity {
         });
 
         submitButton = (Button) findViewById(R.id.donateCamButton);
-        backButton.setOnClickListener(new View.OnClickListener() {
+        submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent myIntent = new Intent(currentScreen, ProfilePage.class);
