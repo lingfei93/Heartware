@@ -174,5 +174,4 @@
         android:layout_below="@+id/image_donor_profile_progress"
         android:textAlignment="center" />
 
-
 </RelativeLayout>
