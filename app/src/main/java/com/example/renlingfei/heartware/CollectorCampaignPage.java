@@ -30,16 +30,6 @@ public class CollectorCampaignPage extends Activity {
         setContentView(R.layout.activity_collector_campaign_page);
 
 
-        currentScreen = this;
-        contact = (Button) findViewById(R.id.button_collector_profile_contact);
-        contact.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent myIntent = new Intent(currentScreen, DonorCampaignPage.class);
-                startActivity(myIntent);
-            }
-        });
-
         //for each row
         for (int i = 0; i < allocation_size; i++) {
             //variables
@@ -85,7 +75,6 @@ public class CollectorCampaignPage extends Activity {
             //add row to table
             ll.addView(row, i);
         }
-
     }
 
 }
