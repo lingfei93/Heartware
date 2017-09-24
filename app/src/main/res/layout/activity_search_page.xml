@@ -46,21 +46,24 @@
                     android:layout_height="100dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="Recycling 4 Good" />
+                    android:text="Recycling 4 Good"
+                    android:textAllCaps="false"/>
                 <Button
                     android:id="@+id/searchResult12"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="Red Cross Recycling" />
+                    android:text="Red Cross Recycling"
+                    android:textAllCaps="false" />
                 <Button
                     android:id="@+id/searchResult13"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="ASPN Zero Waste" />
+                    android:text="ASPN Zero Waste"
+                    android:textAllCaps="false"/>
             </TableRow>
 
             <TableRow>
@@ -70,45 +73,54 @@
                     android:layout_height="100dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="UpCycle Today" />
+                    android:text="UpCycle Today"
+                    android:textAllCaps="false"/>
                 <Button
                     android:id="@+id/searchResult22"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="Recycle Mania" />
+                    android:text="Recycle Mania"
+                    android:textAllCaps="false"/>
                 <Button
                     android:id="@+id/searchResult23"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="Collect 4 Charity" />
+                    android:text="Collect 4 Charity"
+                    android:textAllCaps="false"/>
             </TableRow>
 
             <TableRow>
+
                 <Button
                     android:id="@+id/searchResult31"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="UpCycle" />
+                    android:text="UpCycle"
+                    android:textAllCaps="false"/>
+
                 <Button
                     android:id="@+id/searchResult32"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="Recycle" />
+                    android:text="Recycle"
+                    android:textAllCaps="false"/>
+
                 <Button
                     android:id="@+id/searchResult33"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="giving.sg" />
+                    android:text="giving.sg"
+                    android:textAllCaps="false"/>
             </TableRow>
 
             <TableRow>
@@ -118,21 +130,24 @@
                     android:layout_height="100dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="Waste Free SG" />
+                    android:text="Waste Free SG"
+                    android:textAllCaps="false"/>
                 <Button
                     android:id="@+id/searchResult42"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="RED CROSS Upcycling" />
+                    android:text="RED CROSS Upcycling"
+                    android:textAllCaps="false"/>
                 <Button
                     android:id="@+id/searchResult43"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="Save the Earth" />
+                    android:text="Save the Earth"
+                    android:textAllCaps="false"/>
             </TableRow>
 
             <TableRow>
@@ -142,21 +157,24 @@
                     android:layout_height="100dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="sgcares" />
+                    android:text="sgcares"
+                    android:textAllCaps="false"/>
                 <Button
                     android:id="@+id/searchResult52"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="3Rs" />
+                    android:text="3Rs"
+                    android:textAllCaps="false"/>
                 <Button
                     android:id="@+id/searchResult53"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                    android:text="Recycling" />
+                    android:text="Recycling"
+                    android:textAllCaps="false"/>
             </TableRow>
         </TableLayout>
 

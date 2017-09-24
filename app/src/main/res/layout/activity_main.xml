@@ -42,8 +42,8 @@
         android:layout_marginLeft="15dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="30dp"
-        android:textColor="@color/black"
-        android:textSize="30sp"
+        android:textSize="20sp"
+        android:textStyle="bold"
         android:text="Signed Up : " />
 
     <HorizontalScrollView
@@ -65,17 +65,20 @@
             <TableRow>
 
                 <Button
-                    style="?android:attr/borderlessButtonStyle"
                     android:id="@+id/oldCamPic1"
+                    style="?android:attr/borderlessButtonStyle"
                     android:layout_width="100dp"
                     android:layout_height="90dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/oldcampic1"
-                    android:scaleType="centerCrop"
                     android:backgroundTint="#80FFFFFF"
                     android:backgroundTintMode="src_over"
-                    android:text="Zero Waste 2017" />
+                    android:scaleType="centerCrop"
+                    android:text="Zero Waste 2017"
+                    android:textAllCaps="false"
+                    android:textColor="#4F4F4F"
+                    android:textStyle="bold" />
 
                 <Button
                     style="?android:attr/borderlessButtonStyle"
@@ -88,7 +91,10 @@
                     android:scaleType="centerCrop"
                     android:backgroundTint="#80FFFFFF"
                     android:backgroundTintMode="src_over"
-                    android:text="APSN Upcycling 2017" />
+                    android:text="APSN Upcycling 2017"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textColor="#4F4F4F"/>
 
             </TableRow>
         </TableLayout>
@@ -101,9 +107,9 @@
         android:layout_alignLeft="@+id/SignedUpText"
         android:layout_alignStart="@+id/SignedUpText"
         android:layout_centerVertical="true"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:text="In Your Region: " />
+        android:text="In Your Region: "
+        android:textSize="20dp"
+        android:textStyle="bold"/>
 
     <HorizontalScrollView
         android:id="@+id/inYourRegion"
@@ -117,8 +123,7 @@
         <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
             style="?android:attr/buttonBarStyle"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            >
+            android:layout_height="wrap_content">
 
 
             <TableRow>
@@ -134,7 +139,10 @@
                     android:scaleType="centerCrop"
                     android:backgroundTint="#80FFFFFF"
                     android:backgroundTintMode="src_over"
-                    android:text="SG cares" />
+                    android:text="SG cares"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textColor="#4F4F4F"/>
 
                 <Button
                     style="?android:attr/borderlessButtonStyle"
@@ -147,7 +155,10 @@
                     android:scaleType="centerCrop"
                     android:backgroundTint="#80FFFFFF"
                     android:backgroundTintMode="src_over"
-                    android:text="Woodlands Run" />
+                    android:text="Woodlands Run"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textColor="#4F4F4F"/>
                 <Button
                     style="?android:attr/borderlessButtonStyle"
                     android:id="@+id/regionEvent3"
@@ -159,7 +170,10 @@
                     android:scaleType="centerCrop"
                     android:backgroundTint="#80FFFFFF"
                     android:backgroundTintMode="src_over"
-                    android:text="BlastOff" />
+                    android:text="BlastOff"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textColor="#4F4F4F"/>
                 <Button
                     style="?android:attr/borderlessButtonStyle"
                     android:id="@+id/regionEvent4"
@@ -171,7 +185,10 @@
                     android:scaleType="centerCrop"
                     android:backgroundTint="#80FFFFFF"
                     android:backgroundTintMode="src_over"
-                    android:text="UpReCycle" />
+                    android:text="UpReCycle"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textColor="#4F4F4F"/>
 
             </TableRow>
         </TableLayout>
