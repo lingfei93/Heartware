@@ -51,11 +51,11 @@
 
     <Button
         android:id="@+id/learnButton"
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/benDes"
-        android:text="Contact Le Yi" />
+        android:text="Contact" />
 
     <TextView
         android:id="@+id/currCam"
@@ -64,7 +64,10 @@
         android:padding="10dp"
         android:layout_below="@id/learnButton"
         android:text="Donations:"
-        android:textAlignment="center"/>
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="12dp"/>
 
     <HorizontalScrollView
         android:id="@+id/currCamScroll"
@@ -121,7 +124,10 @@
         android:padding="10dp"
         android:layout_below="@id/currCamScroll"
         android:text="Collections:"
-        android:textAlignment="center"/>
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="12dp"/>
 
     <HorizontalScrollView
         android:id="@+id/oldCamScroll"

@@ -64,7 +64,10 @@
         android:padding="10dp"
         android:layout_below="@id/learnButton"
         android:text="@string/currCam"
-        android:textAlignment="center"/>
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="12dp"/>
 
     <HorizontalScrollView
         android:id="@+id/currCamScroll"
@@ -130,7 +133,10 @@
         android:padding="10dp"
         android:layout_below="@id/currCamScroll"
         android:text="@string/oldCam"
-        android:textAlignment="center"/>
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="12dp"/>
 
     <HorizontalScrollView
         android:id="@+id/oldCamScroll"
