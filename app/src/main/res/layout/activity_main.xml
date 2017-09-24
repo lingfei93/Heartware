@@ -62,13 +62,9 @@
             <TableRow>
 
                 <Button
-<<<<<<< HEAD
-                    android:id="@+id/oldCamPic1"
-                    style="?android:attr/borderlessButtonStyle"
-=======
+
                     style="?android:attr/borderlessButtonStyle"
                     android:id="@+id/signedup1"
->>>>>>> 7b17b6345fe2cb89c89230174a299c4323124d3b
                     android:layout_width="100dp"
                     android:layout_height="90dp"
                     android:layout_marginLeft="10dp"
